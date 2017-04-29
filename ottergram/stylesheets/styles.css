@@ -1,18 +1,50 @@
+@font-face {
+  font-family: 'lakeshore';
+  src: url('../fonts/LAKESHOR-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
-background-color: rgb(149,194,215);
-  font-size: 10px;
+  background-color: rgb(149,194,215);
+  background-color: cornflowerblue;
+  //font-size: 10px;
+  margin: 0;
+font-family: sans-serif;
 }
 a {text-decoration: none;}
 
+.logo-text {
+  font-family: lakeshore;
+  font-size: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: white;
+}
+
+
+.detail-image-container {
+  margin: 0 auto;
+}
+.detail-image { width: 90%;}
+.detail-image-title {
+  display: block;
+}
+
+
 .thumbnail-list {
+  padding-left: 0;
   list-style: none;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .thumbnail-title {
-display: block;
-margin: 0;
-padding: 4px 10px;
-  background-color: rgb(96,125,1390);
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background-color: rgb(96,125,139);
   color: rgb(202,238,255);
   font-size: 18px;
 }
@@ -24,7 +56,8 @@ padding: 4px 10px;
 }
 
 .thumbnail-item {
-  display: block;
-  border: 1px solid red;
-border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  display: inline-block;
+  border: 1px solid rgb(100%, 100%, 100%);
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  width: 120px;
 }
