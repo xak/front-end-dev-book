@@ -6,6 +6,13 @@
 }
 
 
+@font-face {
+  font-family: 'airstreamregular';
+  src: url('../fonts/Airstream-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --main-bg-color: lightblue;
   --main-text-color: darkorange;
@@ -56,12 +63,34 @@ a {text-decoration: none;}
   margin: 0 auto;
   background-color: var(--color-darkest, black);
   flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.detail-image { width: 90%;}
+.detail-image-frame {
+  text-align: center;
+  position: relative;
+}
+.detail-image { width: 90%; }
 .detail-image-title {
   display: block;
+  text-shadow: rgba(0,0,0,0.9) 1px 2px 9px;
+  font-size: 40px;
+  font-family: airstreamregular;
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
 }
-
+@media all and (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+  }
+}
 
 .thumbnail-list {
   padding-left: 0;
